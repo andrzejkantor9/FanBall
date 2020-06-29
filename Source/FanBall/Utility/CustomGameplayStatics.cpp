@@ -7,7 +7,7 @@
 
 
 //TODO display color in palete like a print, 
-void UCustomGameplayStatics::PrintDebugMessage(UObject* WorldContextObject, FString StringToPrint, float DisplayTime, bool bPrintToLog, bool bPrintToScreen, FLinearColor Color)
+void UCustomGameplayStatics::PrintDebugMessage(FString StringToPrint, float DisplayTime, bool bPrintToLog, bool bPrintToScreen, FLinearColor Color)
 {
 #if !(UE_BUILD_SHIPPING || UE_BUILD_TEST) // Do not Print in Shipping or Test
 	if (bPrintToLog)
